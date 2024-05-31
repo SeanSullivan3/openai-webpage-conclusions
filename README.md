@@ -1,18 +1,18 @@
 # Openai Webpage Conclusions
 
-This project autonomously collects ai generated insights for optimizing and building a company website by utililizing industry leader's design strategies. This python program takes a list of websites as input, uses webscraping techniques to extract the text data from each website, collects the information in a text file, and feeds this information through openai's api to generate reccomendations and analysis for important information to build your website around.
+This project autonomously collects ai generated insights for optimizing and building a website by resourcing design strategies and commonly displayed information from an array of user-chosen example websites. This python program takes a list of websites as input, uses webscraping techniques to extract the text data from each website, collects the information in a text file, and feeds this information through openai's api to generate reccomendations and analysis for important information to build your website around.
 
 ## Inputs
 
-As an example test run, the [Input](Input/) folder contains two txt files, one for the [Consulting](Input/ConsultingWebsites.txt) industry with 5 provided webites and one for the [Software Development](Input/SoftwareDevWebsites.txt) industry with 4 provided websites. This program can accept as many Input files as neccessary, but as openai limits the size of chat requests to about ~16,384 characters, the number of websites in each input file should be limited.
+As an example test run, the [Input](Input/) folder contains two txt files, one with 5 websites from industry leaders in [Consulting](Input/ConsultingWebsites.txt) and one with 4 websites with industry leaders in [Software Development](Input/SoftwareDevWebsites.txt). This program can accept as many Input files as neccessary, but as openai limits the size of chat requests to about ~16,384 characters, the number of websites in each input file should be limited.
 
 ### Formatting Input Files
 
-Each input file should begin with the name of the industry on the first line, and all websites on their own line below the industry name with no spaces or blank lines.
+Each input file should begin with the name of the industry (or type of website you wish to create) on the first line, and all chosen examples websites on their own line below the industry name with no spaces or blank lines.
 
 ## Webscraping Output
 
-Take a look at the [Output](Output/) folder to see the collected data from all of the provided websites. Notice, the data is messy and difficult to follow, one of the pitfalls of webscraping that makes openai extremely useful in this program.
+Take a look at the [Output](Output/) folder to see the collected data from all of the provided websites. Notice, the data is messy and difficult to follow, one of the major pitfalls of webscraping that makes openai extremely useful in this program.
 
 ## Results
 
